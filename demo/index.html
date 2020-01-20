@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document|portfolio</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body onload="typeWriter()">
+    <!----section header--------->
+    <header class="app-header">
+        <nav class="app-nav" data-aos="fade-right">
+            <a  href="#About me">About Me</a>
+            <a href="#Works">Works</a>
+            <a href="#Contact me">Contact Me</a>
+        </nav>
+
+    </header>
+    <!----section about--------->
+    <section class="container-fluid app-section-about">
+        
+        <div class="row app-section-banner">
+            <div class="col-md-6 col-sm-12 col-12 app-info-about">
+                <p></p>
+                <h2 id="type-writer"></h2>
+                <div class="row section-quick-link" data-aos="fade-right">
+                        <a href="#About me">About me </a>
+                        <a href="#Contact me">Contact me </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 offset-md-5 about-info-img" data-aos="fade-right">
+                <img src="./image/undraw_developer_activity_bv83 1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!----section works--------->
+    <section class="container app-section-bio" id="About me">
+        <!-- <h2 class="text-center pt-4 about-me-tag">About Me!!</h2> -->
+        <div class="row">
+            <div class="col-md-6 section-bio-info" data-aos="fade-up">
+                <p>
+                    So I am just a very enthusiastic software developer with the zeal and passion to code, focused towards fullstack development.
+                    I am skilled in languages such as JAVA, JavaScript, C# and also web technologies such as NodeJS, Mongodb, ReactJS, Vuejs, Laravel, Git Version Control,
+                    Oh!! did I mention I am very passionate...
+
+                </p>
+
+            </div>
+            <div class="col-md-6 section-bio-info-img pl-2 pr-2 pt-5" data-aos="fade-up-left">
+                <img src="./image/Achay.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!----section contact--------->
+    <section class="container-fluid app-section-works" id="Works">
+        <h2 class="text-center works-title">Works</h2>
+        <div class="row card-row">
+                <div class="col-md-4 card col-12">
+                    <a class="project-card"href= http://burger-builder-app-1.herokuapp.com/ target="blank">
+                        <img src="./image/burger.PNG" alt="">
+                        <div class="overlay">
+                            <div class="text">
+                                Burger Builder Project
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-5 mb-lg-0">
+              <h4 class="text-uppercase text-light mb-4">Location</h4>
+              <p class="lead mb-0">University of Lagos, Akoka, Lagos.</p>
+              <p>+234 - 8159610503</p>
+            </div>
+            <div class="col-md-6 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4 text-light">Around the Web</h4>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="http://twitter.com/Achay001">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.linkedin.com/in/uche-achay-570815184">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.github.com/Achay009">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+           
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js//app.js"></script>
+    <script>
+      AOS.init();
+      
+        var i = 0;
+        var txt = 'Hi, I am Uche Echesurum, a software developer and I would like to build and innovate for you !!';
+        var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("type-writer").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+
+    </script>
+</body>
+</html>

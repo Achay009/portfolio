@@ -1,0 +1,32 @@
+{
+  "name": "portfolioweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "author": "Achay",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "aos": "^2.3.4",
+    "autoprefixer": "*",
+    "bootstrap": "*",
+    "css-loader": "*",
+    "fibers": "*",
+    "file-loader": "*",
+    "jquery": "*",
+    "mini-css-extract-plugin": "*",
+    "node-sass": "*",
+    "popper.js": "*",
+    "postcss-loader": "*",
+    "sass": "*",
+    "sass-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  }
+}

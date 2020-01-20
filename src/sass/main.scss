@@ -1,0 +1,17 @@
+//Bootstrap
+@import "_var.scss";
+@import "_customize-bootstrap.scss";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path : "~@fortawesome/fontawesome-free/webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+// App Layout file
+
+
+@import 'app/components/_app-header';
+
